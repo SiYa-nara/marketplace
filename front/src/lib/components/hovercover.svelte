@@ -4,7 +4,7 @@
 	export let coverColor;
 </script>
 
-<div class="hover" style="--cover-color: {coverColor};">
+<div class="hover" style="--cover-color: {coverColor}; --border-radius: 5%;">
 	<img {src} {alt} />
 </div>
 
@@ -12,12 +12,14 @@
 	.hover {
 		position: relative;
 		display: inline-block;
+        border-radius: var(--border-radius);
 	}
 
 	.hover::before {
 		content: '';
 		position: absolute;
 		inset: 0;
+        border-radius: var(--border-radius);
 		background-color: var(--cover-color);
 		z-index: 1;
 		opacity: 1;
@@ -32,5 +34,6 @@
         display: block;
         position: relative;
 		width: auto;
+        border-radius: var(--border-radius);
 	}
 </style>
