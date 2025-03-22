@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+    import HoverCover from "$lib/components/hovercover.svelte";
+</script>
+
+<h1>marketplace</h1>
+<HoverCover src="/houseplant.png" alt="a nice, generic houseplant" coverColor="#628238" />
+
+<style>
+	h1 {
+		font-family: 'Jost';
+	}
+</style>
