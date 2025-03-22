@@ -35,12 +35,21 @@
 </div>
 
 <style>
+	:global(body, html) {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
 	.hero {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		width: 100vw;
 		height: 100vh;
+		overflow: none;
 	}
 
 	h1 {
@@ -50,12 +59,12 @@
 	}
 
 	a {
-        text-decoration: none;
-        background-color: #f0f0f0;
-        color: #000;
+		text-decoration: none;
+		background-color: #f0f0f0;
+		color: #000;
 		font-family: 'Jost';
-        font-weight: 300;
-        padding: 8px;
+		font-weight: 300;
+		padding: 8px;
 	}
 
 	#houseplant {
