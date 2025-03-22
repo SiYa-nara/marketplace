@@ -5,6 +5,7 @@
 <div class="hero">
 	<div class="the-center">
 		<h1>marketplace</h1>
+		<a href="#">login or signup</a>
 	</div>
 	<div id="houseplant">
 		<HoverCover src="/houseplant.png" alt="a nice, generic houseplant" coverColor="#628238" />
@@ -25,7 +26,11 @@
 		<HoverCover src="/bus.png" alt="a vintage VW bus" coverColor="#E9BD39" />
 	</div>
 	<div id="bike">
-		<HoverCover src="/bike.png" alt="a sports bike with a wooden crate with bottles inside on it's back" coverColor="#EF943F" />
+		<HoverCover
+			src="/bike.png"
+			alt="a sports bike with a wooden crate with bottles inside on it's back"
+			coverColor="#EF943F"
+		/>
 	</div>
 </div>
 
@@ -40,7 +45,17 @@
 
 	h1 {
 		font-family: 'Jost';
-        font-size: 4.125rem;
+		font-size: 4.125rem;
+		margin-bottom: 4px;
+	}
+
+	a {
+        text-decoration: none;
+        background-color: #f0f0f0;
+        color: #000;
+		font-family: 'Jost';
+        font-weight: 300;
+        padding: 8px;
 	}
 
 	#houseplant {
@@ -59,29 +74,29 @@
 		position: absolute;
 		bottom: 40px;
 		left: 200px;
-    }
+	}
 
 	#iphone {
 		position: absolute;
 		top: 85px;
 		right: 230px;
-    }
+	}
 
 	#pumas {
 		position: absolute;
 		top: 15px;
 		right: 630px;
-    }
+	}
 
 	#bus {
 		position: absolute;
 		top: 15px;
 		right: 5px;
-    }
+	}
 
 	#bike {
 		position: absolute;
 		bottom: 5px;
 		right: 380px;
-    }
+	}
 </style>
